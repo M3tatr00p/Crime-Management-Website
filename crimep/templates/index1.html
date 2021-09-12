@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <script src="static/js/jn.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/grid.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/search.css"/>   
+    <link rel="stylesheet" href="static/css/camera.css"/>
+    <link rel="stylesheet" href="static/css/contact-form.css"/>
+    <link rel="stylesheet" href="static/css/login.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/raphael.js"></script>
+    <script src="static/js/jquery-migrate-1.2.1.js"></script>
+
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="https://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <script src='static/js/device.min.js'></script>
+</head>
+
+<body style="margin:0px;padding:0px">
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header id="header" class="header"  >
+        <div class="header_panel" style="padding-top: 7px;padding-bottom: 5px;" >
+            <div class="container">
+                <div class="brand  fa-shield" >
+                    <h1 class="brand_name" style="font-size:80px">
+                        <a href="/">Poliex</a>
+                    </h1>
+                    <h5 class="brand_slogan">
+                        Police department
+                    </h5>
+                </div>
+               <!-- <form id="search" class="search-form" action="search.php" method="GET" accept-charset="utf-8">
+                    <label class="search-form_label">
+                        <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder=""/>
+                        <span class="search-form_liveout"></span>
+                    </label>
+                    <button class="search-form_submit fa-search" type="submit"></button>
+                </form>-->
+            </div>
+        </div>
+        <div id="stuck_container" class="stuck_container"   >
+            <div class="container" style="padding: 0px;" >
+                <nav class="nav">
+                    <ul class="sf-menu">
+                        <li class="active">
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/AddFIR">Add FIR</a>
+                        </li>
+                        <li>
+                            <a  href="#myModal"  style="width:auto;color:white;"  data-toggle="modal"> Police Login</a>
+                            
+                        </li>
+                         <li>
+                             <a  href="#myModal1"  style="width:auto;color:white;"  data-toggle="modal"> Admin Login</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact_us">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+     <!--========================================================
+                              POLICE LOGIN
+    =========================================================-->
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title text-center" style= "margin-left: 150px;">Police Login</h4>
+				<button type="button" class="close" style="width:10px; " data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<div class="form-group text-center form-row" style="vertical-align: middle ">
+						<i class="fa fa-user fa-2x" style="width:20% ;float:left;  "></i>
+                         <input type="text" style="width:80% ;float:right; " class="form-control" placeholder="Officer Username" required="required">
+					</div>
+					<div class="form-group text-center form-row" style="vertical-align: middle ">
+						<i class="fa fa-lock fa-2x"  style="width:20% ;float:left; "></i><input type="password" style="width:80% ;float:right; " class="form-control" placeholder="Password" required="required">					
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+					</div>
+				</form>
+			</div>
+			<!--<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>-->
+		</div>
+	</div>
+</div> 
+
+
+ <!--========================================================
+                              ADMIN LOGIN
+    =========================================================-->
+
+
+<!-- Modal HTML -->
+<div id="myModal1" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title text-center" style= "margin-left: 150px;">Admin Login</h4>
+				<button type="button" class="close" style="width:10px;" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<div class="form-group text-center form-row">
+						<i class="fa fa-user fa-2x" style="width:20% ;float:left; "></i>
+						 <input type="text" style="width:80% ;float:right; " class="form-control" placeholder="Admin Username" required="required">
+					</div>
+					<div class="form-group text-center form-row">
+						<i class="fa fa-lock fa-2x"  style="width:20% ;float:left; "></i>
+						 <input type="password"  style="width:80% ;float:right; "class="form-control" placeholder="Password" required="required">					
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+					</div>
+				</form>
+			</div>
+			<!--<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>-->
+		</div>
+	</div>
+</div> 
+
+
+
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+       <section id="content" class="content">
+       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/img/slide01.jpg" class="d-block w-100 bg-light " style=" filter: brightness(50%) "alt="...">
+      <div class="carousel-caption d-none d-md-block text-left ">
+        <h5 style="font-size:3rem ;color:white;margin-bottom:250px;"> IT'S AN HONOUR <br>FOR US
+         TO SERVE YOU 
+         
+      </div></h5>
+        
+      </div>
+    
+  </div>
+  
+</div>
+        <div class="box-color">
+            <div class="box1 index_block">
+              <div class="container">
+                  <div class="row">
+                      <div class="card" style="width: 22rem; margin:1rem">
+                          <div class="box_name fa-star">
+                             <h4>Safety
+                                 & Security</h4>
+                          </div>
+                          <div class="box_text">
+                              <h5>liquam rhoncus, libero non congue ultri.</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum vebibendum et condimentum metusip
+                                 dolore ipsumsfaucibus sed dolore.</p>
+                              <div class="box_aside"><a href="#" class="fa-file-text-o"></a></div>
+                          </div>
+                      </div>  
+
+                      <div class="card" style="width: 22rem ;margin:1rem">
+                          <div class="box_name fa-tasks">
+                                <h4>Crime
+                                 Statistics</h4>
+                          </div>
+                          <div class="box_text">
+                               <h5>liquam rhoncus, libero non congue ultri.</h5>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum vebibendum et condimentum metusipdolore ipsumsfaucibus sed dolore.</p>
+                            <div class="box_aside"><a href="#" class="fa-file-text-o"></a></div>
+                          </div>
+                      </div>
+                      <div class="card" style="width: 22rem ; margin:1rem">
+                          <div class="box_name fa-car">
+                            <h4>Police
+                            Patrol</h4>
+                          </div>
+                          <div class="box_text">
+                                <h5>liquam rhoncus, libero non congue ultri.</h5>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum vebibendum et condimentum metusip
+                                 dolore ipsumsfaucibus sed dolore.</p>
+                              <div class="box_aside"><a href="#" class="fa-file-text-o"></a></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+              <div class="container ">
+                  <h3 style=" font-size:3rem;">Featured Services</h3><br>
+                  <div class="row   ">
+                      <div class="grid_10">
+                          <div class="box_aside block_top">
+                              <div class="services  fa-bank">
+                                  <div class="box_cnt">
+                                      <h5><a href="#">Sed sollicitudin diam erat, sed tinci dunt ligula egestas ut</a></h5>
+                                      <p>Sed sollicitudin diam erat, sed tincidunt ligula egestas ut. Pellentesque dictum rhoncus varius.
+                                         Sed nec laoreet lectus, facilisis euismod neque. Suspendisse et leo lectus.</p>
+                                    </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="grid_10">
+                          <div class="box_aside block_top">
+                              <div class="services   fa-flag">
+                                  <div class="box_cnt">
+                                      <h5><a href="#">egestas ut Pellentesque dictum rho ncus varius. Sed nec laor</a></h5>
+                                      <p>Rhoncus varius. Sed nec laoreet lectus, facilisis euismod neq ue. Suspendisse et leo
+                                         lectus. Vivamus sit amet sagittis libero. Integer laoreet diam viverra, porttitor </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                 
+                      <div class="grid_10">
+                          <div class="box_aside">
+                              <div class="services  fa-users">
+                                  <div class="box_cnt">
+                                      <h5><a href="#">diam erat, sed tincidunt ligula estas ut Pellentesque dictum </a></h5>
+                                      <p>Sed nec laoreet lectus, facilisis euismod neque. Suspendisse et leo lectus.
+                                         Vivamus sit amet sagittis libero. Integer laoreet diam viverra, porttitor augue ac, aliquet </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="grid_10">
+                          <div class="box_aside">
+                              <div class="services   fa-comments-o">
+                                  <div class="box_cnt">
+                                      <h5><a href="#">tincidunt ligula egestas ut Pellente sque dictum rhoncus </a></h5>
+                                      <p>Uspendisse et leo lectus. Vivamus sit amet sagittis libero. Inte ger laoreet diam viverra, porttitor augue ac,
+                                         aliquet felis. In pre tium, lacus id pellentesque condimentum</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+             </div>
+              
+            
+
+            <div class="container  " id="contact_us">
+                <div class="row p-0">
+
+                    <div class="grid_4">
+                         <div class="address">
+                            <h3>address</h3>
+                            <h5>9870 St Vincent Place,
+                                Glasgow, DC 45 Fr 45.</h5>
+                            <p>Freephone: <label>+1 800 559 6580</label></p>
+                            <p>Telephone: <label>+1 800 603 6035</label></p>
+                            <p>FAX:       <label>+1 800 889 9898 </label></p>
+                            <p>E-mail: <a href="#"> mail@demolink.org</a> </p>
+                        </div>
+                    </div>    
+                 <div class="grid_7" >
+                        <div class="contact_form">
+                            <h3 class="primary">Contact form</h3>
+                            <form id="contact-form"  method="POST" action="bat/MailHandler.php">
+                                <div class="contact-form-loader"></div>
+                                <fieldset>
+                                    <label class="name">
+                                        <input type="text" name="name" placeholder="Name*:" value="" data-constraints="@Required @JustLetters"  />
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid name.</span>
+                                    </label>
+                                    <label class="email">
+                                        <input type="text" name="email" placeholder="Email*:" value="" data-constraints="@Required @Email" />
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid email.</span>
+                                    </label>
+                                    <label class="phone">
+                                        <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid phone.</span>
+                                    </label>
+                                    <label class="message">
+                                        <textarea name="message" placeholder="Message*:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*The message is too short.</span>
+                                    </label>
+                                    <div class="link">
+                                        <a href="#" data-type="submit" >send</a>
+                                    </div>
+                                </fieldset>
+                                <div class="modal fade response-message">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="modal-title">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                You message has been sent! We will be in touch soon.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>  
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer id="footer" class="footer" style="background-color: #333">
+        <div class="container  " >
+            <div class="row">
+                <div class="grid_4">
+                    <div class="box_aside fa-phone">
+                        <span id="phone">Telephone: +1 800 603 6035</span><br>
+                         <span id="email"> E-mail: <a href="#">mail@demolink.org</a></span>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="box_aside fa-map-marker">
+                       <label class="primary">Poliex</label><br>
+                       <span id="adress">28 Jackson Blvd Ste 1020<br>
+                        Chicago, IL 60604-2340</span>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div class="box_aside" id="social_block">
+                        <label class="primary">Poliex</label>&nbsp; © <span id="copyright-year"></span> |
+                        <a class="footer_link" href="index-5.html">Privacy Policy</a>
+                        <!-- FOOTER_LINK -->
+                        <div class="social">
+                            <div class="soc_network"><a class="fa fa-facebook" href="#"></a>
+                            </div>
+                            <div class="soc_network"><a class="fa fa-rss" href="#"></a>
+                            </div>
+                            <div class="soc_network"><a class="fa fa-twitter" href="#"></a>
+                            </div>
+                            <div class="soc_network"><a class="fa fa-google-plus" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="static/js/script.js"></script>
+<script type="text/javascript">
+ var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7078796-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</script>
+<!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body>
+</html>
