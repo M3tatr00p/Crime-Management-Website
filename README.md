@@ -50,9 +50,14 @@ public. This software is mainly developed for
 Mangalore citizens and it is a joint operation of
 police stations of different regions of Mangalore
 with the intention of making the city crime free. 
+# Demo video
 
-# Screenshot 
-![ScreenShot Tool -20210912131117](https://user-images.githubusercontent.com/52278696/132978859-ea844704-8095-44e3-8e65-c69a0c12d572.png)
 
-![pol2](https://user-images.githubusercontent.com/52278696/132978866-3f4889a0-877f-477c-b7d6-c676995ee880.PNG)
-![pol3](https://user-images.githubusercontent.com/52278696/132978868-1ceaf618-2a32-409d-a7a9-ce17bec29cd4.PNG)
+
+https://user-images.githubusercontent.com/52278696/132981978-542bb855-0cf6-44a4-8210-9ef0b36f13ee.mp4
+
+  # Screenshot 
+  ![ScreenShot Tool -20210912131117](https://user-images.githubusercontent.com/52278696/132978859-ea844704-8095-44e3-8e65-c69a0c12d572.png)
+
+  ![pol2](https://user-images.githubusercontent.com/52278696/132978866-3f4889a0-877f-477c-b7d6-c676995ee880.PNG)
+  ![pol3](https://user-images.githubusercontent.com/52278696/132978868-1ceaf618-2a32-409d-a7a9-ce17bec29cd4.PNG)
